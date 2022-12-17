@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Norse";
+  src: url(fonts/Norse-Bold.woff) format(woff);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 80vw;
+  min-height: 100vh;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sidebar {
+  flex: 1;
+  background: url(images/sidebar-bg.jpg) center/cover;
+}
+
+.content {
+  background-color: #f9fafb;
+  flex: 1.75;
+  position: relative;
+}
+
+.logo-container {
+  position: relative;
+  top: 300px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.logo-container h1 {
+  font-family: "Norse";
+  font-size: 3rem;
+  color: white;
+}
+
+.content p:first-child {
+  margin-top: 200px;
+}
+
+.content p {
+  margin-left: 50px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.content p:last-child {
+  font-size: 0.8rem;
+}
+
+p .log-in {
+  color: #596d48;
+  font-weight: bold;
+}
+
+h2 {
+  padding-top: 20px;
+  padding-left: 50px;
+  margin-bottom: 0;
+  background-color: white;
+}
+
+#sign-up-form {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.shadow {
+  width: 100%;
+  box-shadow: 1px 1px 5px 1px silver;
+}
+
+.form-item {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.form-item * {
+  display: block;
+}
+
+.form-item label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-item input {
+  border: 1px solid #e5e7eb;
+  width: 300px;
+  height: 1.6rem;
+  border-radius: 5px;
+}
+
+.form-item input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 2px 1px 5px silver;
+}
+
+input + span {
+  color: red;
+  font-size: 0.8rem;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+input[type="password"]:not(.error) {
+  border: 1px solid green;
+}
+
+button[form="sign-up-form"] {
+  border: none;
+  margin: 25px 50px;
+  background-color: #596d48;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 8px 24px;
+}

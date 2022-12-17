@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mock Sign-up Form</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  
+  <div class="sidebar">
+    <div class="logo-container">
+      <img class="logo" src="images/odin-lined.png" alt="The Odin Project logo">
+      <h1>ODIN</h1>
+    </div>
+  </div>
+  <div class="content">
+    <p>
+      This is not a real service! You know you need something like this in your life to help you realize your deepest
+      dreams.<br>Sign up <em>now</em> to get started.
+    </p>
+    <p>
+      You <em>know</em> you want to.
+    </p>
+    <h2 class="form-title">Let's do this!</h2>
+    <form id="sign-up-form" action="" method="get">
+      <div class="form-item">
+        <label for="first-name">FIRST NAME</label>
+        <input type="text" name="first-name" id="first-name" autocomplete="given-name">
+      </div>
+      <div class="form-item">
+        <label for="first-name">LAST NAME</label>
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name">
+      </div>
+      <div class="form-item">
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email" autocomplete="email">
+      </div>
+      <div class="form-item">
+        <label for="phone">PHONE NUMBER</label>
+        <input type="tel" name="phone" id="phone" autocomplete="tel">
+      </div>
+      <div class="form-item">
+        <label for="password">PASSWORD</label>
+        <input class="error" type="password" name="password" id="password" required>
+        <span class="err-msg">* Passwords do not match</span>
+      </div>
+      <div class="form-item">
+        <label for="password-conf">CONFIRM PASSWORD</label>
+        <input class="error" type="password" name="password-conf" id="password-conf" required>
+      </div>
+    </form>
+    <div class="shadow"></div>
+    <button form="sign-up-form">Create Account</button>
+    <p>
+      Already have an account? <span class="log-in">Log in</span>
+    </p>
+  </div>
 </body>
+
 </html>
